@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img {
+    float: right;
+    margin: 7rem 6rem 0rem 0rem;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.box {
+    margin: 8rem;
+    height: 40rem;
+    background-color: white;
+    opacity: .8;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 7rem 0rem 0rem 7rem;
+    position: absolute;
+    font-weight: bold;
+}
+
+.div1 {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.div2 {
+    display: flex;
+    flex-flow: row;
+}
+
+h2 {
+    margin: 7rem 0rem -15rem 7rem;
+    font-weight: bold;
+}
+
+p {
+    margin: -18rem 26rem 10rem 14rem;
+    font-size: 2rem;
+    width: 35%;
+}
+
+.btn {
+    float: right;
+    outline-width: 0;
+    margin-top: 31rem;
+    margin-right: -16rem;
+    color: white;
+    background-color: black;
+    padding: 7px 27px;
+    width: 16rem;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: grey;
+}
+
+/* navbar */
+.topnav {
+    z-index: 2;
+    font-size: 17px;
+    background-color: #5f5f5f;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0.7rem;
+    letter-spacing: 1px;
+    left: 0;
+    opacity: 0.85;
+    position: fixed;
+    top: 0px;
+}
+
+.subject {
+    top: 33%;
+    left: 46%;
+    position: absolute;
+    color: white;
+    width: 50%;
+}
+
+.homeBtn {
+    padding: 7px;
+    color: white;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 11px 23px 1px 9px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 9px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: smaller;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #c8cacb;
+}
