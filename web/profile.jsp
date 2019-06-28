@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="profile.css"/>
+    <link rel="stylesheet" type="text/css" href="css/profile.css"/>
     <title>IMDB | Profile</title>
 </head>
-<body background="back.jpg">
+<body background="img/back.jpg">
 
 <!-- Navbar -->
 <div class=" topnav notranslate">
@@ -30,17 +30,19 @@
 <!-- Profile form -->
 <form class="box">
     <div>
-        <img src="pro.png">
+        <img src="img/pro.png">
     </div>
 
-    <h1> Kiarash Tabrizi </h1>
     <div class="div1" id="parent">
+        <h1> Kiarash Tabrizi </h1>
         <h1 style="margin-top: 14rem" contenteditable="false"> Username: </h1>
-        <h2 class="h2" contenteditable="false"> kiarash23 </h2>
         <h1 style="margin-top: 20rem" contenteditable="false">Change password: </h1>
-        <h2 class="h2" style="margin-top: 20.7rem; margin-left: 30rem" contenteditable="true"> ****** </h2>
         <h1 style="margin-top: 26rem" contenteditable="false"> Confirm password: </h1>
-        <h2 class="h2" style="margin-top: 26.7rem; margin-left: 30rem" contenteditable="true"> ****** </h2>
+        <div>
+            <h2 contenteditable="false"> kiarash23 </h2>
+            <input style="margin-top: 3.5rem" type="password" placeholder="*****" name="psw-repeat" required> </input>
+            <input style="margin-top: 9.3rem" type="password" placeholder="*****" name="psw-repeat" required> </input>
+        </div>
         <button id="changeBtn" class="btn"> Change password</button>
     </div>
 </form>
