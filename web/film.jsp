@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/film.css"/>
     <title>IMDB | FILM</title>
 </head>
@@ -41,15 +42,33 @@
             <h2> Time: </h2>
             <h2> Like: </h2>
             <h2> Director: </h2>
+            <h2> Stars: </h2>
             <p> 2019 </p>
             <p> comedy </p>
             <p> 126 min </p>
             <p> 2348 </p>
             <p style="margin-left: 17rem"> Lenny Abrahamson </p>
+            <p> Arnold , Emma , .. </p>
         </div>
     </div>
     <button class="btn"> Add to watch list </button>
 </div>
 
+<!-- Comment -->
+<div class="overlay" id="popup1">
+    <form class="popup comment">
+        <p class="title">Comments</p>
+        <a class="close" href="#">&times;</a>
+        <hr class="hr">
+        <ul class="ul" id="UL"></ul>
+        <div class="addInput">
+            <input class="input" type="text" id="Input" placeholder="To do ...">
+            <span class="addBtn" onclick="newElement(event)"> Add </span>
+        </div>
+    </form>
+</div>
+
+<script src="film.js"></script>
+    
 </body>
 </html>
