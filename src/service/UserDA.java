@@ -36,6 +36,13 @@ public class UserDA {
         return new User(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3),resultSet.getString(4), resultSet.getString(5));
     }
 
+    public void changePass(String username, String pass) throws Exception{
+        preparedStatement = connection.prepareStatement("update users set password=? where username=?");
+        preparedStatement.setString(1,pass);
+        preparedStatement.setString(2,username);
+        preparedStatement.executeUpdate();
+    }
+
     public void close() throws Exception{
         preparedStatement.close();
         connection.close();
