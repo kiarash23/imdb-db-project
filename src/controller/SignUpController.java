@@ -23,7 +23,8 @@ public class SignUpController extends HttpServlet {
             UserDA userDA = new UserDA();
             userDA.addUser(user);
             userDA.close();
-            response.sendRedirect("one.jsp");
+            request.setAttribute("user", user);
+            request.getRequestDispatcher("profile.jsp").forward(request,response);
         } catch (Exception e) {
             e.printStackTrace();
         }
