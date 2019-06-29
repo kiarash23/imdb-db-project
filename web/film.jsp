@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -30,9 +29,11 @@
 </div>
 
 <!-- film profile -->
-<div class="box">
+<form class="box">
     <div>
         <img src="img/room.jpg">
+        <button class="btn"> Add to watch list</button>
+        <a class="cmBtn" href="#popup1"> Comment</a>
     </div>
     <div>
         <h1> Room </h1>
@@ -51,8 +52,7 @@
             <p> Arnold , Emma , .. </p>
         </div>
     </div>
-    <button class="btn"> Add to watch list </button>
-</div>
+</form>
 
 <!-- Comment -->
 <div class="overlay" id="popup1">
