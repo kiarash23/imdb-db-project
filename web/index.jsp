@@ -13,16 +13,16 @@
 <body background="img/back1.jpg">
 
 <!-- Login form -->
-<form action="/login.do" id="login_form" method="post">
+<form action="/login" id="login_form" method="post">
     <div class="container">
         <h1>Login</h1>
         <hr>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
 
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="pass" required>
 
         <hr>
         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
